@@ -3,149 +3,140 @@
 <title>
     Add student
 </title>
-<<<<<<< Updated upstream
 <style>
-body {
-   background-image:url("background.jpg");
-}
-h1 {color: rgb(78, 77, 77);}
-label{
-   color: rgb(78, 77, 77);
-   font-size: 120%;
-   font-style: bild; 
-}
-input{
-   text-align: center;
-}
-input[type=submit]{
-   height: 1.3cm;
-   width:15cm;
-   color: #b7d5e0;
-   background-color: rgb(78, 77, 77);
-   border: none;
-   font-size: large;
-   border-radius: 10px;
-}
-input[type=text],[type=tel],[type=date]{
-   height:1cm;
-   width: 7cm;
-   border: 5px;
-   border-radius: 5px;
-}
-div {
-  border-radius: 10px;
-  background-color: #b7d5e0;
-  padding: 25px;
-}
+    body {
+        background-image: url("background.jpg");
+    }
+    
+    h1 {
+        color: rgb(78, 77, 77);
+    }
+    
+    label {
+        color: rgb(78, 77, 77);
+        font-size: 120%;
+        font-style: bild;
+    }
+    
+    input {
+        text-align: center;
+    }
+    
+    input[type=submit] {
+        height: 1.3cm;
+        width: 15cm;
+        color: #b7d5e0;
+        background-color: rgb(78, 77, 77);
+        border: none;
+        font-size: large;
+        border-radius: 10px;
+    }
+    
+    input[type=text],
+    [type=tel],
+    [type=date] {
+        height: 1cm;
+        width: 7cm;
+        border: 5px;
+        border-radius: 5px;
+    }
+    
+    div {
+        border-radius: 10px;
+        background-color: #b7d5e0;
+        padding: 25px;
+    }
 </style>
 
-<body >
-   <align align="center">
-   <form>  
-    <h1 >Add Student</h1>
-    <img src="user.png" alt="Trulli" width="200" height="200"><br>
-    <div>
-=======
-<!--
-Name
-ID
-GPA
-Date of birth,
-gender
-level
-statue<active,inactive>
-department
-email
-mobile number
--->
-<body >
-    <h3>Please Enter Student Data:) </h3>
-   <form>
+<body>
+    <align align="center">
+        <form>
+            <h1>Add Student</h1>
+            <img src="user.png" alt="Trulli" width="200" height="200"><br>
+            <div>
+                <!--Name-->
+                <label for="Name">Student Name:</label><br>
+                <input type="text" required placeholder="ex: Mariam Tarek Mohammed"><br><br>
 
->>>>>>> Stashed changes
-    <!--Name-->
-       <label for="Name">Student Name:</label><br>
-       <input type ="text" required placeholder="ex: Mariam Tarek Mohammed"><br><br>
+                <!--Phone Number-->
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="ex: +201234567890"><br><br>
 
-    <!--Phone Number-->
-        <label for="mobile">Mobile Number:</label><br>
-        <input type="tel" id="phone" name="phone" required placeholder="ex: +201234567890" ><br><br>
+                <!--Email-->
+                <label for="email">Student Email:</label><br>
+                <input type="text" required placeholder="ex: abc123@gmail.com"><br><br>
 
-    <!--Email-->
-        <label for="email">Student Email:</label><br>
-        <input type ="text" required placeholder="ex: abc123@gmail.com"><br><br>
-    
-    <!--ID-->
-       <label for="ID">Student ID:</label><br>
-       <input type ="text" required placeholder="ex: 123456"><br><br>
+                <!--ID-->
+                <label for="ID">Student ID:</label><br>
+                <input type="text" required placeholder="ex: 123456"><br><br>
 
-    <!--GPA-->
-       <label for="GPA">GPA:</label><br>
-       <input type ="text" required placeholder="0:4"><br><br>
-   
-    <!--Birthday-->
-       <label for="birthday">Birthday:</label><br>
-       <input type="date" required id="birthday" name="birthday"><br><br>
-    
-    <!--Gender--> 
-    
-       <label for="Gender">Gender:</label><br>
-       <input type="radio" name="gender" id="female" value="female"checked>
-       <label for="female">Female</label>
+                <!--GPA-->
+                <label for="GPA">GPA:</label><br>
+                <input type="text" required placeholder="0:4"><br><br>
 
-       <input type="radio" name="gender" id="male" value="male" >
-       <label for="male">Male</label><br><br>
+                <!--Birthday-->
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" required id="birthday" name="birthday"><br><br>
 
-    <!--statue-->   
-       <label for="statue">Statue:</label><br>
-       <input type="radio" name="statue" id="active" value="active" checked>
-       <label for="active">Active</label>
-       
-       <input type="radio" name="statue" id="inactive"value="inactive">
-       <label for="inactive">Inactive</label>
-       <br><br>  
+                <!--Gender-->
 
-    <!--Level-->
-       <label for="level">Level:</label><br>
-       <input type="radio" name="level" id="first" value="first"checked >
-       <label for="first">1</label>
+                <label for="Gender">Gender:</label><br>
+                <input type="radio" name="gender" id="female" value="female" checked>
+                <label for="female">Female</label>
 
-       <input type="radio" name="level" id="second" value="second">
-       <label for="second">2</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br><br>
 
-       <input type="radio" name="level" id="third" value="third">
-       <label for="third">3</label>
+                <!--statue-->
+                <label for="statue">Statue:</label><br>
+                <input type="radio" name="statue" id="active" value="active" checked>
+                <label for="active">Active</label>
 
-       <input type="radio" name="level" id="fourth" value="fourth">
-       <label for="fourth">4</label><br><br>
+                <input type="radio" name="statue" id="inactive" value="inactive">
+                <label for="inactive">Inactive</label>
+                <br><br>
 
-    <!--department-->
-       <label for="department">Department</label><br>
+                <!--Level-->
+                <label for="level">Level:</label><br>
+                <input type="radio" name="level" id="first" value="first" checked>
+                <label for="first">1</label>
 
-       <input type="radio" name="department" id="G" value="G"checked>
-       <label for="G">General</label>
+                <input type="radio" name="level" id="second" value="second">
+                <label for="second">2</label>
 
-       <input type="radio" name="department" id="cs" value="cs">
-       <label for="cs">CS</label>
+                <input type="radio" name="level" id="third" value="third">
+                <label for="third">3</label>
 
-       <input type="radio" name="department" id="ds" value="ds">
-       <label for="ds">DS</label>
+                <input type="radio" name="level" id="fourth" value="fourth">
+                <label for="fourth">4</label><br><br>
 
-       <input type="radio" name="department" id="is" value="is">
-       <label for="ai">AI</label>
+                <!--department-->
+                <label for="department">Department</label><br>
 
-       <input type="radio" name="department" id="is" value="is">
-       <label for="is">IS</label>
+                <input type="radio" name="department" id="G" value="G" checked>
+                <label for="G">General</label>
 
-       <input type="radio" name="department" id="it" value="it">
-       <label for="it">IT</label><br><br>
-      
-       
-   </form> <input type="Submit" value="Submit"><br>
-</div>
+                <input type="radio" name="department" id="cs" value="cs">
+                <label for="cs">CS</label>
+
+                <input type="radio" name="department" id="ds" value="ds">
+                <label for="ds">DS</label>
+
+                <input type="radio" name="department" id="is" value="is">
+                <label for="ai">AI</label>
+
+                <input type="radio" name="department" id="is" value="is">
+                <label for="is">IS</label>
+
+                <input type="radio" name="department" id="it" value="it">
+                <label for="it">IT</label><br><br>
 
 
-</align>
+        </form> <input type="Submit" value="Submit"><br>
+        </div>
+
+
+    </align>
 </body>
 
 </html>
