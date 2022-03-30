@@ -16,13 +16,19 @@ email
 mobile number
 -->
 <body>
-    <h2>Please Enter Student Data:) </h2>
+    <h3>Please Enter Student Data:) </h3>
    <form>
 
     <!--Name-->
        <label for="Name">Student Name:</label><br>
        <input type ="text"><br><br>
-
+    <!--Phone Number-->
+        <label for="mobile">Mobile Number:</label><br>
+        <input type ="text"><br><br>
+        <!--Email-->
+        <label for="email">Student Email:</label><br>
+        <input type ="text"><br><br>
+    
     <!--ID-->
        <label for="ID">Student ID:</label><br>
        <input type ="text"><br><br>
@@ -37,38 +43,54 @@ mobile number
         
     <!--Gender--> 
        <label for="Gender">Gender:</label><br>
-       <label for="male">Male</label>
        <input type="radio" name="gender" id="male" value="male" >
+       <label for="male">Male</label>
 
-       <label for="female">Female</label>
-       <input type="radio" name="gender" id="female" value="female"><br><br>
        
+       <input type="radio" name="gender" id="female" value="female">
+       <label for="female">Female</label><br><br>
+
+    <!--statue-->   
+       <label for="statue">Statue:</label><br>
+       <input type="radio" name="statue" id="active" value="active">
+       <label for="active">Active</label>
+       
+       <input type="radio" name="statue" id="inactive"value="inactive">
+       <label for="inactive">Inactive</label>
+       <br><br>  
+
     <!--Level-->
        <label for="level">Level:</label><br>
-       <label for="first">1</label>
-       <input type="radio" name="level" id="first" value="first" ><br>
+       <input type="radio" name="level" id="first" value="first" >
+       <label for="first">1</label><br>
 
-       <label for="second">2</label>
-       <input type="radio" name="level" id="second" value="second"><br>
+       <input type="radio" name="level" id="second" value="second">
+       <label for="second">2</label><br>
 
-       <label for="third">3</label>
-       <input type="radio" name="level" id="third" value="third"><br>
+       <input type="radio" name="level" id="third" value="third">
+       <label for="third">3</label><br>
 
-       <label for="fourth">4</label>
-       <input type="radio" name="level" id="fourth" value="fourth"><br>
-
-    <!--statue-->
-    <br><label for="statue">Statue:</label><br>
-    <label for="active">Active</label>
-    <input type="radio" name="statue" id="active" value="active">
-
-    <label for="inactive">Inactive</label>
-    <input type="radio" name="statue" id="inactive"value="inactive">
+       <input type="radio" name="level" id="fourth" value="fourth">
+       <label for="fourth">4</label><br><br>
 
     <!--department-->
+       <label for="department">Department</label><br>
+       <input type="radio" name="department" id="is" value="is">
+       <label for="ai">AI</label><br>
 
+       <input type="radio" name="department" id="cs" value="cs">
+       <label for="cs">CS</label><br>
 
+       <input type="radio" name="department" id="ds" value="ds">
+       <label for="ds">DS</label><br>
 
+       <input type="radio" name="department" id="is" value="is">
+       <label for="is">IS</label><br>
+
+       <input type="radio" name="department" id="it" value="it">
+       <label for="it">IT</label><br>
+       
+       <input type="submit">
    </form> 
 
 </body>
