@@ -3,14 +3,50 @@
 <title>
     Add student
 </title>
-<body background="background.jpg">
+<style>
+body {
+   background-image:url("background.jpg");
+}
+h1 {color: rgb(78, 77, 77);}
+label{
+   color: rgb(78, 77, 77);
+   font-size: 120%;
+   font-style: bild; 
+}
+input{
+   text-align: center;
+}
+input[type=submit]{
+   height: 1.3cm;
+   width:15cm;
+   color: #b7d5e0;
+   background-color: rgb(78, 77, 77);
+   border: none;
+   font-size: large;
+   border-radius: 10px;
+}
+input[type=text],[type=tel],[type=date]{
+   height:1cm;
+   width: 7cm;
+   border: 5px;
+   border-radius: 5px;
+}
+div {
+  border-radius: 10px;
+  background-color: #b7d5e0;
+  padding: 25px;
+}
+</style>
+
+<body >
+   <align align="center">
    <form>  
-   
-    <h3>Enter Student Data: </h3>
+    <h1 >Add Student</h1>
+    <img src="user.png" alt="Trulli" width="200" height="200"><br>
+    <div>
     <!--Name-->
        <label for="Name">Student Name:</label><br>
-       <input type ="text" required placeholder="ex: Mohemed Ahmed"><br><br>
-
+       <input type ="text" required placeholder="ex: Mariam Tarek Mohammed"><br><br>
 
     <!--Phone Number-->
         <label for="mobile">Mobile Number:</label><br>
@@ -33,13 +69,13 @@
        <input type="date" required id="birthday" name="birthday"><br><br>
     
     <!--Gender--> 
+    
        <label for="Gender">Gender:</label><br>
-       <input type="radio" name="gender" id="male" value="male" checked>
-       <label for="male">Male</label>
+       <input type="radio" name="gender" id="female" value="female"checked>
+       <label for="female">Female</label>
 
-       
-       <input type="radio" name="gender" id="female" value="female">
-       <label for="female">Female</label><br><br>
+       <input type="radio" name="gender" id="male" value="male" >
+       <label for="male">Male</label><br><br>
 
     <!--statue-->   
        <label for="statue">Statue:</label><br>
@@ -53,13 +89,13 @@
     <!--Level-->
        <label for="level">Level:</label><br>
        <input type="radio" name="level" id="first" value="first"checked >
-       <label for="first">1</label><br>
+       <label for="first">1</label>
 
        <input type="radio" name="level" id="second" value="second">
-       <label for="second">2</label><br>
+       <label for="second">2</label>
 
        <input type="radio" name="level" id="third" value="third">
-       <label for="third">3</label><br>
+       <label for="third">3</label>
 
        <input type="radio" name="level" id="fourth" value="fourth">
        <label for="fourth">4</label><br><br>
@@ -68,25 +104,29 @@
        <label for="department">Department</label><br>
 
        <input type="radio" name="department" id="G" value="G"checked>
-       <label for="G">General</label><br>
+       <label for="G">General</label>
 
        <input type="radio" name="department" id="cs" value="cs">
-       <label for="cs">CS</label><br>
+       <label for="cs">CS</label>
 
        <input type="radio" name="department" id="ds" value="ds">
-       <label for="ds">DS</label><br>
+       <label for="ds">DS</label>
 
        <input type="radio" name="department" id="is" value="is">
-       <label for="ai">AI</label><br>
+       <label for="ai">AI</label>
 
        <input type="radio" name="department" id="is" value="is">
-       <label for="is">IS</label><br>
+       <label for="is">IS</label>
 
        <input type="radio" name="department" id="it" value="it">
        <label for="it">IT</label><br><br>
+      
        
-       <input type="Submit" value="Submit">
-   </form> 
+   </form> <input type="Submit" value="Submit"><br>
+</div>
+
+
+</align>
 </body>
 
 </html>
