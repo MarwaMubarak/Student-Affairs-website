@@ -15,35 +15,38 @@ department
 email
 mobile number
 -->
-<body>
-    <h3>Please Enter Student Data:) </h3>
+<body background="background.jpg">
+    
    <form>
-
+    <h3>Enter Student Data: </h3>
     <!--Name-->
        <label for="Name">Student Name:</label><br>
-       <input type ="text"><br><br>
+       <input type ="text" required placeholder="ex: Mohemed Ahmed"><br><br>
+
+
     <!--Phone Number-->
         <label for="mobile">Mobile Number:</label><br>
-        <input type ="text"><br><br>
-        <!--Email-->
+        <input type="tel" id="phone" name="phone" required placeholder="ex: +201234567890" ><br><br>
+
+    <!--Email-->
         <label for="email">Student Email:</label><br>
-        <input type ="text"><br><br>
+        <input type ="text" required placeholder="ex: abc123@gmail.com"><br><br>
     
     <!--ID-->
        <label for="ID">Student ID:</label><br>
-       <input type ="text"><br><br>
+       <input type ="text" required placeholder="ex: 123456"><br><br>
 
     <!--GPA-->
        <label for="GPA">GPA:</label><br>
-       <input type ="text"><br><br>
+       <input type ="text" required placeholder="0:4"><br><br>
 
     <!--Birthday-->
        <label for="birthday">Birthday:</label><br>
-       <input type="date" id="birthday" name="birthday"><br><br>
+       <input type="date" required id="birthday" name="birthday"><br><br>
         
     <!--Gender--> 
        <label for="Gender">Gender:</label><br>
-       <input type="radio" name="gender" id="male" value="male" >
+       <input type="radio" name="gender" id="male" value="male" checked>
        <label for="male">Male</label>
 
        
@@ -52,7 +55,7 @@ mobile number
 
     <!--statue-->   
        <label for="statue">Statue:</label><br>
-       <input type="radio" name="statue" id="active" value="active">
+       <input type="radio" name="statue" id="active" value="active" checked>
        <label for="active">Active</label>
        
        <input type="radio" name="statue" id="inactive"value="inactive">
@@ -61,7 +64,7 @@ mobile number
 
     <!--Level-->
        <label for="level">Level:</label><br>
-       <input type="radio" name="level" id="first" value="first" >
+       <input type="radio" name="level" id="first" value="first"checked >
        <label for="first">1</label><br>
 
        <input type="radio" name="level" id="second" value="second">
@@ -75,14 +78,18 @@ mobile number
 
     <!--department-->
        <label for="department">Department</label><br>
-       <input type="radio" name="department" id="is" value="is">
-       <label for="ai">AI</label><br>
+
+       <input type="radio" name="department" id="G" value="G"checked>
+       <label for="G">General</label><br>
 
        <input type="radio" name="department" id="cs" value="cs">
        <label for="cs">CS</label><br>
 
        <input type="radio" name="department" id="ds" value="ds">
        <label for="ds">DS</label><br>
+
+       <input type="radio" name="department" id="is" value="is">
+       <label for="ai">AI</label><br>
 
        <input type="radio" name="department" id="is" value="is">
        <label for="is">IS</label><br>
