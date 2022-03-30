@@ -1,2 +1,53 @@
-rehammmmmm
-staaaaar
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Department page</title>
+</head>
+
+<body background="background.jpg">
+    <h1 align="center">Department page</h1>
+    <form>
+
+        <p><strong> Student Name:</strong><br /><br />
+            <input type="text" required placeholder="ex: Reham Rashad" style="height: 40px; width:200 ;"><br />
+        </p> <br />
+        <p><strong> Student ID:</strong><br /><br />
+            <input type="text" required placeholder="ex: 20200011" style="height: 40px; width:200 ;"><br />
+        </p>
+        <br />
+        <br />
+        <label for="level"><strong> Student Level:</strong></label><br /><br />
+        <input type="radio" id="level1" name="level" value="Level (1)" style="height: 15px; width:15px ;">
+        <label for="level1">Level (1)</label> <br />
+        <input type="radio" id="level2" name="level" value="Level (2)" style="height: 15px; width:15px ;">
+        <label for="level2">Level (2)</label><br />
+        <input type="radio" id="level3" name="level" value="Level (3)" style="height: 15px; width:15px ;">
+        <label for="level3">Level (3)</label><br />
+        <input type="radio" id="level4" name="level" value="Level (4)" style="height: 15px; width:15px ;">
+        <label for="level4">Level (4)</label><br />
+
+
+        <br />
+
+        <p><strong> Department:</strong><br /><br />
+            <select name="department" style="height: 40px; width:200 ;">
+                <option disabled selected hidden>Choose department</option>
+                <option> General</option>
+                <option>CS</option>
+                <option> DS</option>
+                <option> AI</option>
+                <option> IS</option>
+                <option> IT</option>
+
+            </select>
+            <br /> <br /><br /> <br />
+            <button onclick="alert('the level should be level(3) or level(4)!')" style="height: 40px; width:100 ;">Submit</button>
+          
+
+          
+
+    </form>
+</body>
+
+</html>
