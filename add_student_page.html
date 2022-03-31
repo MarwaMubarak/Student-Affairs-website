@@ -5,7 +5,7 @@
 </title>
 <style>
     body {
-        background-image: url("background.jpg");
+        background-image: url("web theme.png");
     }
     
     h1 {
@@ -43,9 +43,15 @@
     
     div {
         border-radius: 10px;
-        background-color: #b7d5e0;
+        background-color: #6fe0ec;
         padding: 25px;
+        width: 20cm;
     }
+    .center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
 </style>
 
 <body>
@@ -53,7 +59,7 @@
         <form>
             <h1>Add Student</h1>
             <img src="user.png" alt="Trulli" width="200" height="200"><br>
-            <div>
+            <div class="center">
                 <!--Name-->
                 <label for="Name">Student Name:</label><br>
                 <input type="text" required placeholder="ex: Mariam Tarek Mohammed"><br><br>
@@ -80,16 +86,16 @@
 
                 <!--Gender-->
 
-                <label for="Gender">Gender:</label><br>
-                <input type="radio" name="gender" id="female" value="female" checked>
+                <label for="Gender">Gender: </label><br>
+                <input type="radio"required name="gender" id="female" value="female">
                 <label for="female">Female</label>
 
-                <input type="radio" name="gender" id="male" value="male">
+                <input type="radio"  name="gender" id="male" value="male">
                 <label for="male">Male</label><br><br>
 
                 <!--statue-->
                 <label for="statue">Statue:</label><br>
-                <input type="radio" name="statue" id="active" value="active" checked>
+                <input type="radio"required name="statue" id="active" value="active" >
                 <label for="active">Active</label>
 
                 <input type="radio" name="statue" id="inactive" value="inactive">
@@ -98,7 +104,7 @@
 
                 <!--Level-->
                 <label for="level">Level:</label><br>
-                <input type="radio" name="level" id="first" value="first" checked>
+                <input type="radio"required name="level" id="first" value="first" >
                 <label for="first">1</label>
 
                 <input type="radio" name="level" id="second" value="second">
@@ -113,7 +119,7 @@
                 <!--department-->
                 <label for="department">Department</label><br>
 
-                <input type="radio" name="department" id="G" value="G" checked>
+                <input type="radio" required name="department" id="G" value="G" >
                 <label for="G">General</label>
 
                 <input type="radio" name="department" id="cs" value="cs">
