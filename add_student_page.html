@@ -5,15 +5,19 @@
 </title>
 <style>
     body {
-        background-image: url("background.jpg");
+        background-image: url("web theme.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
     }
     
     h1 {
-        color: rgb(78, 77, 77);
+        color: rgb(255, 255, 255);
     }
     
     label {
-        color: rgb(78, 77, 77);
+        color: rgb(255, 255, 255);
         font-size: 120%;
         font-style: bild;
     }
@@ -24,28 +28,38 @@
     
     input[type=submit] {
         height: 1.3cm;
-        width: 15cm;
-        color: #b7d5e0;
-        background-color: rgb(78, 77, 77);
+        width: 10cm;
+        color: #3bafd8;
+        background-color: rgb(255, 255, 255);
         border: none;
         font-size: large;
-        border-radius: 10px;
+        border-radius: 25px;
     }
     
     input[type=text],
-    [type=tel],
-    [type=date] {
+    [type=tel]
+    {
         height: 1cm;
-        width: 7cm;
+        width: 6cm;
         border: 5px;
-        border-radius: 5px;
+        border-radius: 3px;
     }
-    
-    div {
-        border-radius: 10px;
-        background-color: #b7d5e0;
-        padding: 25px;
+    input[type=date] {
+        height: 1cm;
+        width: 4cm;
+        border: 5px;
+        border-radius: 3px;
     }
+    ::-webkit-input-placeholder{font-size: 130%;}
+    input:focus::-webkit-input-placeholder {
+    font-size: 150%;
+    position: top;
+    top: -15px; 
+    color: black;
+    transition: 0.2s ease-out;
+}
+tab { padding-left: .5em; }
+
 </style>
 
 <body>
@@ -53,52 +67,52 @@
         <form>
             <h1>Add Student</h1>
             <img src="user.png" alt="Trulli" width="200" height="200"><br>
-            <div>
+            <div class="center">
                 <!--Name-->
-                <label for="Name">Student Name:</label><br>
-                <input type="text" required placeholder="ex: Mariam Tarek Mohammed"><br><br>
+                <label for="Name"></label><br>
+                <input type="text" required placeholder="Student Name"><br><br>
 
                 <!--Phone Number-->
-                <label for="mobile">Mobile Number:</label><br>
-                <input type="tel" id="phone" name="phone" required placeholder="ex: +201234567890"><br><br>
+                <label for="mobile"></label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="Mobile Number"><br><br>
 
                 <!--Email-->
-                <label for="email">Student Email:</label><br>
-                <input type="text" required placeholder="ex: abc123@gmail.com"><br><br>
+                <label for="email"></label><br>
+                <input type="text" required placeholder="Student Email"><br><br>
 
                 <!--ID-->
-                <label for="ID">Student ID:</label><br>
-                <input type="text" required placeholder="ex: 123456"><br><br>
+                <label for="ID"></label><br>
+                <input type="text" required placeholder="Student ID"><br><br>
 
                 <!--GPA-->
-                <label for="GPA">GPA:</label><br>
-                <input type="text" required placeholder="0:4"><br><br>
+                <label for="GPA"></label><br>
+                <input type="text" required placeholder="GPA"><br><br>
 
                 <!--Birthday-->
-                <label for="birthday">Birthday:</label><br>
+                <label for="birthday">Birthday:</label>
                 <input type="date" required id="birthday" name="birthday"><br><br>
 
                 <!--Gender-->
 
-                <label for="Gender">Gender:</label><br>
-                <input type="radio" name="gender" id="female" value="female" checked>
-                <label for="female">Female</label>
+                <label for="Gender">Gender: </label><tab>
+                <input type="radio"required name="gender" id="female" value="female">
+                <label for="female">Female</label><tab2>
 
-                <input type="radio" name="gender" id="male" value="male">
+                <input type="radio"  name="gender" id="male" value="male">
                 <label for="male">Male</label><br><br>
-
+                
                 <!--statue-->
-                <label for="statue">Statue:</label><br>
-                <input type="radio" name="statue" id="active" value="active" checked>
-                <label for="active">Active</label>
+                <label for="statue">Statue:</label><tab>
+                <input type="radio"required name="statue" id="active" value="active" >
+                <label for="active">Active</label><tab2>
 
                 <input type="radio" name="statue" id="inactive" value="inactive">
                 <label for="inactive">Inactive</label>
                 <br><br>
 
                 <!--Level-->
-                <label for="level">Level:</label><br>
-                <input type="radio" name="level" id="first" value="first" checked>
+                <label for="level">Level:</label><tab>
+                <input type="radio"required name="level" id="first" value="first" >
                 <label for="first">1</label>
 
                 <input type="radio" name="level" id="second" value="second">
@@ -111,9 +125,9 @@
                 <label for="fourth">4</label><br><br>
 
                 <!--department-->
-                <label for="department">Department</label><br>
+                <label for="department">Department:</label><br>
 
-                <input type="radio" name="department" id="G" value="G" checked>
+                <input type="radio" required name="department" id="G" value="G" >
                 <label for="G">General</label>
 
                 <input type="radio" name="department" id="cs" value="cs">
