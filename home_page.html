@@ -7,14 +7,11 @@
     body {
         margin: 0;
         padding: 0;
+        background-image: url("web theme.png");
+        background-position: center;
+        background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-    }
-    
-    nav {
-        position: absolute;
-        left: 100px;
-        top: 30;
     }
     
     .fci {
@@ -36,6 +33,12 @@
         color: #fff;
     }
     
+    nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+    
     nav a {
         text-decoration: none;
         font-size: 20px;
@@ -46,6 +49,19 @@
         margin-right: 25px;
         padding: 10px;
         border-radius: 10px;
+    }
+    
+    nav .activee {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e6ffff;
+        color: black;
     }
     
     nav a:hover {
@@ -74,10 +90,13 @@
 
 
     <nav>
+        <a class="activee" href="home_page.html">Home</a>
         <a href="add_student_page.html">Add Student</a>
         <a href="edit_page.html">Edit Student Data</a>
         <a href="search_page.html">Search</a>
         <a href="view_students_page.html">View Students</a>
+        <a href="department_page.html">Department</a>
+
     </nav>
     <div class="fci">
         <h1>Welcome to FCAI-CU Students Affairs</h1>
