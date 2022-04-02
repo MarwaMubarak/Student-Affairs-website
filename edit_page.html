@@ -113,12 +113,12 @@
 
     </nav>
     <div class="a">
-        <img src="edit.png" alt="Trulli" width="100" height="100"><br>
+        <img src="edit icon.png" alt="Trulli" width="150" height="150"><br>
         <p>
             <h3>Enter the Student's Name</h3>
-            <input type="text" placeholder="Student's Name">
+            <input type="text" placeholder="Student's Name" style="color: #240f70;">
             <h3>Enter the Student's ID</h3>
-            <input type="text" placeholder="Student's ID">
+            <input type="text" placeholder="Student's ID" style="color: #240f70;">
             <br> <br>
         </p>
     </div>
@@ -126,8 +126,8 @@
 
     <div class="b">
 
-        <label for="options" style="margin-right: 15;">Update an information</label>
-        <select name="options" id="options" style="margin-right: 15;">
+        <center> <label for="options" style="margin-right: 15;">Update an information</label>
+            <select name="options" id="options" style="margin-right: 15;color: #240f70;">
             <option value="ID">ID</option>
             <option value="Name">Name</option>
             <option value="Mobile number">Mobile number</option>
@@ -137,12 +137,13 @@
             <option value="date of birth">Date of birth</option>
             <option value="Email">Email</option>
             </select>
-
-        <input type="text" style="margin-right: 15;">
-        <button style="margin-right: 15;">Update</button>
-        <br><br><br>
-        <label style="margin-right: 15;"> Delete this Student</label>
-        <button onclick="return confirm('Are you sure you want to Delete this Student?');">Delete</button>
+            <input type="text" style="margin-right: 15;color: #240f70;" placeholder="Enter Updated information">
+            <button style="margin-right: 15;">Update</button>
+            <br><br>
+            <label> Delete Student</label>
+            <br>
+            <button onclick="return confirm('Are you sure you want to Delete this Student?');">Delete</button>
+        </center>
     </div>
 
 </body>
