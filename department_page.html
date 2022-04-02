@@ -4,10 +4,71 @@
 <head>
     <title>Department page</title>
 </head>
+<style>
+    nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    nav .activee {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    nav a:hover {
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    .fontt {
+        color: white;
+    }
+    
+    body {
+        background-image: url("web theme.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
 
-<body background="background.jpg">
-    <h1 align="center">Department page</h1>
-    <form>
+<body>
+    <br>
+
+    <nav>
+        <a href="home_page.html">Home</a>
+        <a href="add_student_page.html">Add Student</a>
+        <a href="edit_page.html">Edit Student Data</a>
+        <a href="search_page.html">Search</a>
+        <a href="view_students_page.html">View Students</a>
+        <a class="activee" href="department_page.html">Department</a>
+
+    </nav>
+
+    <br>
+    <form class="fontt">
 
         <p><strong> Student Name:</strong><br /><br />
             <input type="text" required placeholder="    ex: Reham Rashad" style="height: 40px; width:200 ;"><br />
@@ -31,7 +92,7 @@
         <br />
 
         <p><strong> Department:</strong><br /><br />
-            <select name="department" style="height: 40px; width:200 ;">
+            <select name="department" style="height: 40px; width:200 ;color:#240f70;">
                 <option disabled selected hidden>Choose department</option>
                 <option> General</option>
                 <option>CS</option>
@@ -42,10 +103,10 @@
 
             </select>
             <br /> <br /><br /> <br />
-            <button onclick="alert('the level should be level(3) or level(4)!')" style="height: 40px; width:100 ;">Submit</button>
-          
+            <button onclick="alert('the level should be level(3) or level(4)!')" style="height: 40px; width:100 ;color: #240f70;">Submit</button>
 
-          
+
+
 
     </form>
 </body>
