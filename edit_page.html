@@ -1,83 +1,133 @@
 <html>
-    <head>
-        <title>Edit Page</title>
-    </head>
-    <style>
-        body{
+
+<head>
+    <title>Edit Page</title>
+</head>
+<style>
+    body {
         background-image: url("web theme.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        }
-        h3{
+    }
+    
+    h3 {
         color: rgb(255, 255, 255);
-        }
-        h1{
+    }
+    
+    h1 {
         color: rgb(255, 255, 255);
-        }
-        label {
-            color:rgb(255, 255, 255);
-            font-size: 130%;
-            font-style: bild;
-        }
-        select {
-        height:1cm;
-        }
-        
-        input{
-            text-align: center;
-        }
-
-        button {
+    }
+    
+    label {
+        color: rgb(255, 255, 255);
+        font-size: 130%;
+        font-style: bild;
+    }
+    
+    select {
+        height: 1cm;
+    }
+    
+    input {
+        text-align: center;
+    }
+    
+    button {
         height: 1cm;
         width: 3cm;
         color: #240f70;
         background-color: rgb(255, 255, 255);
-        border: 2px solid  #240f70;
+        border: 2px solid #240f70;
         font-size: large;
         border-radius: 15px;
-        }
-        input[type=text]
-        {
-            height: 1cm;
-            width: 6cm;
-            border: 5px;
-            border-radius: 3px;
-        }
-        div.a {
+    }
+    
+    input[type=text] {
+        height: 1cm;
+        width: 6cm;
+        border: 5px;
+        border-radius: 3px;
+    }
+    
+    div.a {
         text-align: center;
-        }
-        div.b {
+        margin-top: 80;
+    }
+    
+    div.b {
         text-align: left;
-        }
-        div.c {
+        margin-left: 30;
+    }
+    
+    div.c {
         text-align: right;
-        }
+    }
+    
+    nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    nav .activee {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    nav a:hover {
+        background-color: #e6ffff;
+        color: black;
+    }
+</style>
 
+<body>
+    <nav>
+        <a href="home_page.html">Home</a>
+        <a href="add_student_page.html">Add Student</a>
+        <a class="activee" href="edit_page.html">Edit Student Data</a>
+        <a href="search_page.html">Search</a>
+        <a href="view_students_page.html">View Students</a>
+        <a href="department_page.html">Department</a>
 
-    </style>
+    </nav>
+    <div class="a">
+        <img src="edit.png" alt="Trulli" width="100" height="100"><br>
+        <p>
+            <h3>Enter the Student's Name</h3>
+            <input type="text" placeholder="Student's Name">
+            <h3>Enter the Student's ID</h3>
+            <input type="text" placeholder="Student's ID">
+            <br> <br>
+        </p>
+    </div>
+    <br><br>
 
-    <body >
-        <div class="c">
-            <button onclick="window.location.href='home_page.html'">Home</button><br>
-        </div>
-        <div class="a">
-            <h1>UPDATE</h2>
-                <img src="edit.png" alt="Trulli" width="100" height="100"><br>
-                <p>
-                    <h3>Enter the Student's Name</h3>
-                    <input type="text" placeholder="Student's Name">
-                    <h3>Enter the Student's ID</h3>
-                    <input type="text" placeholder="Student's ID">
-                    <br> <br>
-                   </p>
-        </div>
-        <br><br>
+    <div class="b">
 
-        <div class="b">
-            <label for="options">Update an information</label>
-            <select name="options" id="options" >
+        <label for="options" style="margin-right: 15;">Update an information</label>
+        <select name="options" id="options" style="margin-right: 15;">
             <option value="ID">ID</option>
             <option value="Name">Name</option>
             <option value="Mobile number">Mobile number</option>
@@ -87,12 +137,14 @@
             <option value="date of birth">Date of birth</option>
             <option value="Email">Email</option>
             </select>
-            <input type="text">
-            <button>Update</button>
-            <br><br><br>
-            <label> Delete this Student</label>
-            <button onclick="return confirm('Are you sure you want to Delete this Student?');">Delete</button>
-        </div>
-        
-    </body>
+
+        <input type="text" style="margin-right: 15;">
+        <button style="margin-right: 15;">Update</button>
+        <br><br><br>
+        <label style="margin-right: 15;"> Delete this Student</label>
+        <button onclick="return confirm('Are you sure you want to Delete this Student?');">Delete</button>
+    </div>
+
+</body>
+
 </html>
