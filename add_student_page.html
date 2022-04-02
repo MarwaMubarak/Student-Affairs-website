@@ -28,7 +28,7 @@
     input[type=submit] {
         height: 1.3cm;
         width: 10cm;
-        color: #3bafd8;
+        color:#240f70 ;
         background-color: rgb(255, 255, 255);
         border: none;
         font-size: large;
@@ -67,13 +67,43 @@
     transition: 0.2s ease-out;
 }
 tab { padding-left: .5em; }
-
+nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    nav a:hover {
+        background-color: #e6ffff;
+        color: black;
+    }
 </style>
 
 <body>
-    <button onclick="window.location.href='home_page.html'">Home</button><br>
+
+    <br>
+    <nav>
+        <a href="home_page.html">HOME</a>
+        <a href="edit_page.html">Edit Student Data</a>
+        <a href="search_page.html">Search</a>
+        <a href="view_students_page.html">View Students</a>
+    </nav>
+    <ul>
+
     <align align="center">
         <form>
+            <br><br>
             <h1>Add Student</h1>
             <img src="user.png" alt="Trulli" width="200" height="200"><br>
             <div class="center">
