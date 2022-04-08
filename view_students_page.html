@@ -1,34 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <title>
     View Students
 </title>
-<body background="web theme.png
-">
-    <h1 align="center">Student Status</h1><br>
-    <strong for="student status">Student Status: </strong>
-<select name="student status"><option value="Active">Active</option><option value="Inactive"select>Inactive</option><option value="All">All</option>
-</select>
-<br><br>
 
-<table border="1" width="300" height="200"> 
-    <tr> 
-        <th align="center">Student Name</th> 
-        <th align="center">ID</th>
-         <th align="center">Department</th>
 
-</tr>
- <tr>
-      <td align="center"><a href="file:///C:/Users/Mayar/Documents/GitHub/Student-Affairs-website/department_page.html">Student 1</a></td>
-      <td align="center">1</td> 
-      <td align="center">CS</td>
-</tr>
- <tr>
-    <td align="center"><a href="file:///C:/Users/Mayar/Documents/GitHub/Student-Affairs-website/department_page.html">Student 2</a></td>
-    <td align="center">2</td>
-      <td align="center">IS</td>
-</tr>
-</table>  
+<style>
+    body {
+        background-image: url("web theme.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    input[type=submit] {
+        height: .8cm;
+        width: 2cm;
+        color: #240f70;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        font-size: large;
+        border-radius: 25px;
+    }
+    
+    h1 {
+        color: rgb(255, 255, 255);
+    }
+    
+    nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    nav .activee {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    nav a:hover {
+        background-color: #e6ffff;
+        color: black;
+    }
+</style>
 
+<body>
+    <br>
+    <nav>
+        <a href="home_page.html">Home</a>
+        <a href="add_student_page.html">Add Student</a>
+        <a href="edit_page.html">Edit Student Data</a>
+        <a href="search_page.html">Search</a>
+        <a class="activee" href="view_students_page.html">View Students</a>
+        <a href="department_page.html">Department</a>
+        <a href="login_page.html">Logout</a>
+
+
+    </nav>
+    <br>
+
+
+    <div style="color: white;margin-top: 50px;margin-left: 20px;">
+        <strong for="student status">Student Status: </strong>
+        <br>
+        <select name="student status">
+        <option value="Active">Active</option>
+        <option value="Inactive"select>Inactive</option>
+        <option value="All">All</option>
+    </select>
+        <br><br>
+        <table border="1px collapse" style="color: white;border-radius: 25px;border-color: white;border-style:solid ;border-collapse: collapse;padding: 100px 50px 50px 50px;">
+            <tr>
+                <th align="center">Student Name</th>
+                <th align="center"> Student ID</th>
+                <th align="center">Stauts</th>
+                <th align="center">Level</th>
+                <th align="center">GPA</th>
+                <th align="center">Department</th>
+                <th align="center">Student Email</th>
+                <th align="center">Phone Number</th>
+                <th align="center">Birthday</th>
+                <th align="center">Gender</th>
+            </tr>
+
+            <tr>
+                <td align="center">Student 1</a>
+                </td>
+                <td align="center">1</a>
+                </td>
+                <td>
+                    <form>
+                        <input type="radio" name="stat" value="Active">
+                        <label for="stat">Active </label><br>
+                        <input type="radio" name="stat" value="Inactive">
+                        <label for="stat"> Inactive</label><br>
+
+                    </form>
+                </td>
+                <td align="center">4</a>
+                </td>
+                <td align="center">3.5</a>
+                </td>
+                <td align="center">CS</td>
+                <td align="center">www.student1.com</a>
+                </td>
+                <td align="center">12345</a>
+                </td>
+                <td align="center">16/6/2002</a>
+                </td>
+                <td align="center">Female</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">Student 2</a>
+                </td>
+                <td align="center">2</a>
+                </td>
+                <td>
+                    <form>
+                        <input type="radio" name="stat" value="Bike">
+                        <label for="stat">Active </label><br>
+                        <input type="radio" name="stat" value="Car">
+                        <label for="stat"> Inactive</label><br>
+
+                    </form>
+                </td>
+                <td align="center">3</a>
+                </td>
+                <td align="center">2.5</a>
+                </td>
+                <td align="center">IS</td>
+                <td align="center">www.student2.com</a>
+                </td>
+                <td align="center">01111</a>
+                </td>
+                <td align="center">20/5/2002</a>
+                </td>
+                <td align="center">Male</a>
+                </td>
+            </tr>
+    </div>
+    <br>
+
+    <input type="Submit" value="Save"><br><br>
 </body>
+
 </html>

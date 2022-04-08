@@ -4,8 +4,57 @@
 <head>
     <title>Department page</title>
 </head>
+<style>
+    nav {
+        position: absolute;
+        left: 100px;
+        top: 30;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    nav .activee {
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: poppins;
+        margin-right: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    nav a:hover {
+        background-color: #e6ffff;
+        color: black;
+    }
+    
+    .fontt {
+        color: white;
+    }
+    
+    body {
+        background-image: url("web theme.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
 
-<body background="background.jpg">
+<body background="web theme.png">
     <h1 align="center">Department page</h1>
     <form>
 
@@ -32,6 +81,47 @@
 
         <p><strong> Department:</strong><br /><br />
             <select name="department" style="height: 40px; width:200 ;">
+<body>
+    <br>
+
+    <nav>
+        <a href="home_page.html">Home</a>
+        <a href="add_student_page.html">Add Student</a>
+        <a href="edit_page.html">Edit Student Data</a>
+        <a href="search_page.html">Search</a>
+        <a href="view_students_page.html">View Students</a>
+        <a class="activee" href="department_page.html">Department</a>
+        <a href="login_page.html">Logout</a>
+
+
+    </nav>
+
+    <br>
+    <div style="margin-left: 40px;margin-top: 50px">
+        <form class="fontt">
+
+            <p><strong> Student Name:</strong><br /><br />
+                <input type="text" required placeholder="    ex: Reham Rashad" style="height: 40px; width:200 ;">
+            </p> <br />
+            <p><strong> Student ID:</strong><br /><br />
+                <input type="text" required placeholder="    ex: 20200011" style="height: 40px; width:200 ;"><br />
+            </p>
+            <br />
+            <label for="level"><strong> Student Level:</strong></label><br /><br />
+            <input type="radio" id="level1" name="level" value="Level (1)" style="height: 15px; width:15px ;">
+            <label for="level1">1</label> <br />
+            <input type="radio" id="level2" name="level" value="Level (2)" style="height: 15px; width:15px ;">
+            <label for="level2">2</label><br />
+            <input type="radio" id="level3" name="level" value="Level (3)" style="height: 15px; width:15px ;">
+            <label for="level3">3</label><br />
+            <input type="radio" id="level4" name="level" value="Level (4)" style="height: 15px; width:15px ;">
+            <label for="level4">4</label><br />
+
+
+            <br />
+
+            <p><strong> Department:</strong><br /><br />
+                <select name="department" style="height: 40px; width:200 ;color:#240f70;">
                 <option disabled selected hidden>Choose department</option>
                 <option> General</option>
                 <option>CS</option>
@@ -41,13 +131,14 @@
                 <option> IT</option>
 
             </select>
-            <br /> <br /><br /> <br />
-            <button onclick="alert('the level should be level(3) or level(4)!')" style="height: 40px; width:100 ;">Submit</button>
-          
+                <br /> <br />
+                <button onclick="alert('the level should be level(3)!')" style="height: 40px; width:100 ;color: #240f70;">Submit</button>
 
-          
 
-    </form>
+
+
+        </form>
+    </div>
 </body>
 
 </html>
