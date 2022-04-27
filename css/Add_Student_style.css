@@ -43,7 +43,7 @@ button {
 }
 
 input[type=text],
-[type=tel] {
+[type=tel] ,[type=number]{
     height: 1cm;
     width: 6cm;
     border: 5px;
