@@ -10,7 +10,7 @@ function validateForm()
     var phoneform = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if(studentName==null || studentName=="" )
     {
-        alert("Name can't be left blank");
+        alert("Student Name isn't Valid");
         return false;
     }
     else if(!number.match(phoneform)||number==""||number==null)
