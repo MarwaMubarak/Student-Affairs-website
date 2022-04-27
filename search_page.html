@@ -3,51 +3,8 @@
 <title>
     search page
 </title>
-<style>
-    nav {
-        position: absolute;
-        left: 100px;
-        top: 30;
-    }
-    
-    nav a {
-        text-decoration: none;
-        font-size: 20px;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: poppins;
-        margin-right: 25px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
-    nav .activee {
-        text-decoration: none;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: poppins;
-        margin-right: 25px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #e6ffff;
-        color: black;
-    }
-    
-    nav a:hover {
-        background-color: #e6ffff;
-        color: black;
-    }
-    
-    body {
-        background-image: url("images/web theme.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
-</style>
+
+<link rel="stylesheet" href="css/search_page.css">
 
 <body>
 
@@ -75,24 +32,23 @@
         <br><br>
         </table>
 
-        <table border="1px collapse" style="color: white;border-radius: 25px;border-color: white;border-style:solid ;border-collapse: collapse;padding: 100px 50px 50px 50px;">
+        <table class="Content_Table">
+            <style></style>
             <tr>
-                <th align="center">Student Name</th>
-                <th align="center">ID</th>
-                <th align="center">Department</th>
+                <th>Student Name</th>
+                <th>ID</th>
+                <th>Department</th>
 
             </tr>
-            <tr>
-                <td align="center"><a style="color: white;" href="department_page.html">Student 1</a></td>
-                <td align="center">1</a>
-                </td>
-                <td align="center">CS</td>
+            <tr class="active-row">
+                <td><a style="color: white;" href="department_page.html">Student 1</a></td>
+                <td>1</td>
+                <td>CS</td>
             </tr>
             <tr>
-                <td align="center"><a style="color: white;" href="department_page.html">Student 2</a></td>
-                <td align="center">2</a>
-                </td>
-                <td align="center">IS</td>
+                <td><a style="color: white;" href="department_page.html">Student 2</a></td>
+                <td>2</td>
+                <td>IS</td>
             </tr>
         </table>
     </div>
@@ -100,3 +56,4 @@
 </body>
 
 </html>
+<!--- border="1px collapse" style="color: white;border-radius: 25px;border-color: white;border-style:solid ;border-collapse: collapse;padding: 100px 50px 50px 50px;"-->
