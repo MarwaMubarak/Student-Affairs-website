@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+     font-family:Arial;
+    background-image: url("../images/web theme.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+input[type=submit] {
+    height: .8cm;
+    width: 2cm;
+    color: #240f70;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: large;
+    border-radius: 25px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    position: absolute;
+    left: 100px;
+    top: 30;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav .activee {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e6ffff;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e6ffff;
+    color: black;
+}
+.Table
+{
+    width: 800px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
+    border-radius: 7px 7px 7px 7px;
+    overflow:hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.Table thead tr
+{
+background-color: #009879;
+color: #ffffff;
+text-align: center;
+font-weight: bold;
+
+}
+
+.Table th,tr 
+{
+    padding: 20px 20px;
+    width: 25px;
+    height: 50px;
+}
+
+
+
+.Table tbody tr
+{
+    border-bottom: 1px solid #ffffff;
+
+}
+
+
+
+.Table tbody tr:nth-of-type(even)
+{
+    background-color: #dfdfdf;
+}
+
+
+
+.Table tr:nth-last-of-type
+{
+border-bottom:2px solid #009879;
+}
+
+
+
+
+.Table tbody tr.active-row
+{
+    font-weight: bold;
+    color: #009879;
+}
