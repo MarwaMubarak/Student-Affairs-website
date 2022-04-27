@@ -3,56 +3,8 @@
 
 <head>
     <title>Department page</title>
+    <link rel="stylesheet" href="css/department_page.css">
 </head>
-<style>
-    nav {
-        position: absolute;
-        left: 100px;
-        top: 30;
-    }
-    
-    nav a {
-        text-decoration: none;
-        font-size: 20px;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: poppins;
-        margin-right: 25px;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    
-    nav .activee {
-        text-decoration: none;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-family: poppins;
-        margin-right: 25px;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #e6ffff;
-        color: black;
-    }
-    
-    nav a:hover {
-        background-color: #e6ffff;
-        color: black;
-    }
-    
-    .fontt {
-        color: white;
-    }
-    
-    body {
-        background-image: url("images/web theme.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
-</style>
 
 <body>
     <br>
@@ -72,73 +24,50 @@
     <br>
 
     <form>
+       
+        <div style="margin-left: 40px;margin-top: 50px">
+            <form class="fontt">
 
-        <p><strong> Student Name:</strong><br /><br />
-            <input type="text" required placeholder="    ex: Reham Rashad" style="height: 40px; width:200 ;"><br />
-        </p> <br />
-        <p><strong> Student ID:</strong><br /><br />
-            <input type="text" required placeholder="    ex: 20200011" style="height: 40px; width:200 ;"><br />
-        </p>
-        <br />
-        <br />
-        <label for="level"><strong> Student Level:</strong></label><br /><br />
-        <input type="radio" id="level1" name="level" value="Level (1)" style="height: 15px; width:15px ;">
-        <label for="level1">Level (1)</label> <br />
-        <input type="radio" id="level2" name="level" value="Level (2)" style="height: 15px; width:15px ;">
-        <label for="level2">Level (2)</label><br />
-        <input type="radio" id="level3" name="level" value="Level (3)" style="height: 15px; width:15px ;">
-        <label for="level3">Level (3)</label><br />
-        <input type="radio" id="level4" name="level" value="Level (4)" style="height: 15px; width:15px ;">
-        <label for="level4">Level (4)</label><br />
-
-
-        <br />
-
-        <p><strong> Department:</strong><br /><br />
-            <select name="department" style="height: 40px; width:200 ;">
-  
-    <div style="margin-left: 40px;margin-top: 50px">
-        <form class="fontt">
-
-            <p><strong> Student Name:</strong><br /><br />
-                <input type="text" required placeholder="    ex: Reham Rashad" style="height: 40px; width:200 ;">
-            </p> <br />
-            <p><strong> Student ID:</strong><br /><br />
-                <input type="text" required placeholder="    ex: 20200011" style="height: 40px; width:200 ;"><br />
-            </p>
-            <br />
-            <label for="level"><strong> Student Level:</strong></label><br /><br />
-            <input type="radio" id="level1" name="level" value="Level (1)" style="height: 15px; width:15px ;">
-            <label for="level1">1</label> <br />
-            <input type="radio" id="level2" name="level" value="Level (2)" style="height: 15px; width:15px ;">
-            <label for="level2">2</label><br />
-            <input type="radio" id="level3" name="level" value="Level (3)" style="height: 15px; width:15px ;">
-            <label for="level3">3</label><br />
-            <input type="radio" id="level4" name="level" value="Level (4)" style="height: 15px; width:15px ;">
-            <label for="level4">4</label><br />
+                <p><strong> Student Name:</strong><br /><br />
+                    <input type="text" required placeholder="    ex: Reham Rashad" style="height: 40px; width:200 ;">
+                </p> <br />
+                <p><strong> Student ID:</strong><br /><br />
+                    <input type="text" required placeholder="    ex: 20200011" style="height: 40px; width:200 ;"><br />
+                </p>
+                <br />
+                <label for="level"><strong> Student Level:</strong></label><br /><br />
+                <input type="radio" id="level1" name="level" value="Level (1)" style="height: 15px; width:15px ;">
+                <label for="level1">1</label> <br />
+                <input type="radio" id="level2" name="level" value="Level (2)" style="height: 15px; width:15px ;">
+                <label for="level2">2</label><br />
+                <input type="radio" id="level3" name="level" value="Level (3)" style="height: 15px; width:15px ;">
+                <label for="level3">3</label><br />
+                <input type="radio" id="level4" name="level" value="Level (4)" style="height: 15px; width:15px ;">
+                <label for="level4">4</label><br />
 
 
-            <br />
+                <br />
 
-            <p><strong> Department:</strong><br /><br />
-                <select name="department" style="height: 40px; width:200 ;color:#240f70;">
-                <option disabled selected hidden>Choose department</option>
-                <option> General</option>
-                <option>CS</option>
-                <option> DS</option>
-                <option> AI</option>
-                <option> IS</option>
-                <option> IT</option>
+                <p><strong> Department:</strong><br /><br />
+                    <select name="department" style="height: 40px; width:200 ;color:#240f70;">
+                        <option disabled selected hidden>Choose department</option>
+                        <option> General</option>
+                        <option>CS</option>
+                        <option> DS</option>
+                        <option> AI</option>
+                        <option> IS</option>
+                        <option> IT</option>
 
-            </select>
-            <br /> <br />
-            <button onclick="alert('the level should be level(3)!')" style="height: 40px; width:100 ;color: #240f70;">Submit</button>
+                    </select>
+                    <br /> <br />
+                    <button onclick="alert('the level should be level(3)!')"
+                        style="height: 40px; width:100 ;color: #240f70;">Submit</button>
 
 
 
 
-    </form>
-    </div>
+            </form>
+        </div>
 </body>
 
 </html>
