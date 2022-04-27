@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <head>
 <title>
     Add student
 </title>
+<script type="text/javascript" src="JS/Add_Student_JS.js"></script>
 <link rel="stylesheet" href="css/Add_Student_style.css">
-
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Validation</title>
+</head>
 <body>
 
     <br>
@@ -22,34 +26,28 @@
     <ul>
 
 
-        <form>
+        <form name="myform" action="something" onsubmit="return validateForm()" method="post" >
             <br><br>
             <h1>Add Student</h1>
             <img src="images/user.png" alt="Trulli" width="150" height="150"><br>
-            <div class="center">
                 <!--Name-->
-                <label for="Name"></label><br>
-                <input type="text" required placeholder="Student Name"><br><br>
+            
+                <input type="text" name ='StudentName'  placeholder="Student Name"><br><br>
                 
                 <!--Phone Number-->
-                <label for="mobile"></label><br>
-                <input type="tel" id="phone" name="phone" required placeholder="Mobile Number"><br><br>
+                <input type="tel"  name="Number"  placeholder="Mobile Number"><br><br>
 
                 <!--Email-->
-                <label for="email"></label><br>
-                <input type="text" required placeholder="Student Email"><br><br>
+                <input type="text" name ="Email"  placeholder="Student Email"><br><br>
 
                 <!--ID-->
-                <label for="ID"></label><br>
-                <input type="text" required placeholder="Student ID"><br><br>
+                <input type="text" name="ID" placeholder="Student ID"><br><br>
 
                 <!--GPA-->
-                <label for="GPA"></label><br>
-                <input type="text" required placeholder="GPA"><br><br>
+                <input type="number" name="GPA" step="0.01" placeholder="GPA"><br><br>
 
                 <!--Birthday-->
-                <label for="birthday">Birthday:</label>
-                <input type="date" required id="birthday" name="birthday"><br><br>
+                <input type="date"  name="birthday"><br><br>
 
                 <!--Gender-->
 
@@ -108,10 +106,10 @@
 
                                     <input type="radio" name="department" id="it" value="it">
                                     <label for="it">IT</label><br><br>
-
-
-        </form> <input type="Submit" value="Submit"><br><br>
-
+                                    <input type="Submit" value="Submit"><br><br>
+                                    
+        </form> 
+        <script>src="Js/Add_Student_JS.js"</script>
 </body>
 
 </html>
