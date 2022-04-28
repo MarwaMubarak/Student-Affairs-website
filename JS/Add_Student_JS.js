@@ -5,7 +5,7 @@ function validateForm()
     let email=document.forms['myform']["Email"].value;
     let id = document.forms['myform']["ID"].value;
     let gpa=document.forms['myform']["GPA"].value;
-    var nameformat = /^[a-zA-Z]+$/;
+    var nameformat = /^[ a-zA-Z]+$/;
 
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var phoneformt = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
@@ -25,7 +25,7 @@ function validateForm()
         alert("The Email isn't Valid");
         return false;
     }
-    else if(id<1||id>=70000000||id==""||id==null)
+    else if(id<1||id>=10000000||id==""||id==null)
     {
         alert("The ID isn't Valid");
         return false;
