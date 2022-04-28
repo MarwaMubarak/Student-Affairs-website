@@ -5,7 +5,7 @@ function validateForm()
     let email=document.forms['myform']["Email"].value;
     let id = document.forms['myform']["ID"].value;
     let gpa=document.forms['myform']["GPA"].value;
-    var nameformat = /^[a-zA-Z]+$/;
+    var nameformat = /^[ a-zA-Z]+$/;
 
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var phoneformt = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
