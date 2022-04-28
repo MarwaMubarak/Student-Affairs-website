@@ -10,12 +10,12 @@ body {
 }
 a:link
 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 a:visited
 {
-    color: rgb(27, 81, 109);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 a:hover
@@ -107,6 +107,7 @@ nav a:hover {
 }
 
 
+
 /* table,th,td{
     width: 800px;
     margin: auto;
@@ -118,7 +119,6 @@ nav a:hover {
     border-radius:  5px 5px 0 0;
 
 } */
-
 .Content_Table
 {
     width: 800px;
@@ -164,17 +164,11 @@ font-weight: bold;
 border-bottom:2px solid #009879;
 }
 
-
-
-
-.Content_Table tbody tr.active-row
+.Content_Table tbody tr:active
 {
     font-weight: bold;
-    color: #173c78;
+    background-color: #8ab7ff;
 }
-
-
-
 
 /*table{
     width: 50%;
