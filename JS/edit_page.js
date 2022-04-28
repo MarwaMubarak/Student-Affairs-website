@@ -17,6 +17,8 @@ function myFunction(entery) {
   var x = document.getElementById("Op").value;
   var phoneform = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var nameformat = /^[a-zA-Z]+$/;
+
   if(x=="GPA")
   {
     if(entery<0||entery>4)
@@ -31,10 +33,11 @@ function myFunction(entery) {
   }
   else if(x=="Name")
   {
-    if(typeof entery === 'string')
-    document.getElementById("feedback").innerHTML = "Editing Name done ^^";
+    if(!entery.match(nameformat))
+    document.getElementById("feedback").innerHTML = "incorrect Name";
     else
-      document.getElementById("feedback").innerHTML = "incorrect Name";
+    document.getElementById("feedback").innerHTML = "Editing Name done ^^";
+
   }
   else if(x=="Mobile number")
   {
