@@ -9,6 +9,7 @@
 <body>
 
     <br>
+
     <nav>
         <a href="home_page.html">Home</a>
         <a href="add_student_page.html">Add Student</a>
@@ -30,10 +31,10 @@
     </div>
         <br><br>
 
-        <strong class="input" for="Search">Student ID :  </strong><br><br>
-        <input class="input" id="search" placeholder="enter student id"> <br><br>
-        <button class="button" id="button">search</button>
-        <br><br>
+        <form name="myform" onsubmit="return validateForm()" method="post" >
+            <input type="text" name="ID" placeholder="Student ID"><br><br>
+            <input type="submit" value="Submit">   
+                <br><br>
         </table>
 
         <table class="Content_Table">
@@ -59,6 +60,8 @@
                 <td>IT</td>
             </tr>
         </table>
+        
+        <script type="text/javascript" src="search_page.js"></script>
 
 </body>
 </html>
