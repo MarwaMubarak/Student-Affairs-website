@@ -4,8 +4,16 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    position: relative;
-    text-align: center;
+}
+p
+{    color: rgb(122, 177, 216);
+     font-size: 28px;
+     border-style: double;
+
+}
+
+h3 {
+    color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -14,63 +22,47 @@ h1 {
 
 label {
     color: rgb(255, 255, 255);
-    font-size: 120%;
+    font-size: 130%;
     font-style: bild;
+}
+
+select {
+    height: 1cm;
 }
 
 input {
     text-align: center;
 }
 
-input[type=submit] {
-    height: 1.3cm;
-    width: 10cm;
+button {
+    height: 1cm;
+    width: 3cm;
     color: #240f70;
     background-color: rgb(255, 255, 255);
-    border: none;
+    border: 2px solid #240f70;
     font-size: large;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
-button {
-    height: .8cm;
-    width: 4cm;
-    color: #3bafd8;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    font-size: large;
-    border-radius: 25px;
-}
-
-input[type=text],
-[type=tel] ,[type=number]{
+input[type=text] {
     height: 1cm;
     width: 6cm;
     border: 5px;
     border-radius: 3px;
 }
 
-input[type=date] {
-    height: 1cm;
-    width: 4cm;
-    border: 5px;
-    border-radius: 3px;
+div.a {
+    text-align: center;
+    margin-top: 80;
 }
 
- ::-webkit-input-placeholder {
-    font-size: 130%;
+div.b {
+    text-align: left;
+    margin-left: 30;
 }
 
-input:focus::-webkit-input-placeholder {
-    font-size: 150%;
-    position: top;
-    top: -15px;
-    color: black;
-    transition: 0.2s ease-out;
-}
-
-tab {
-    padding-left: .5em;
+div.c {
+    text-align: right;
 }
 
 nav {
@@ -107,8 +99,4 @@ nav .activee {
 nav a:hover {
     background-color: #e6ffff;
     color: black;
-}
-.here_icon{
-    height: 150px;
-    width: 150px;
 }
