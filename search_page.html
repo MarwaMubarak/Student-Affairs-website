@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html><head>
 <title>
     search page
 </title>
-
+<script type="text/javascript" src="JS/search_page.js"></script>
 <link rel="stylesheet" href="css/search_page.css">
-
+</head>
 <body>
 
     <br>
@@ -21,22 +21,14 @@
     </nav>
 
     <br><br><br>
-
-    <div class="labels">
-        <strong for="student status">Student Status : </strong>
-    </div>
-    <div>
-        <select class="Active" name="student status"><option value="Active">Active</option><option value="Inactive"select>Inactive</option><option value="All">All</option>
+    <form name="myform" onsubmit="return validateForm()" method="post" >
+    <strong for="student status">Student Status : </strong>
+    <select class="Active" name="student status"><option value="Active">Active</option><option value="Inactive"select>Inactive</option><option value="All">All</option>
     </select>
-    </div>
         <br><br>
-
-        <form name="myform" onsubmit="return validateForm()" method="post" >
-            <input type="text" name="ID" placeholder="Student ID"><br><br>
-            <input type="submit" value="Submit">   
-                <br><br>
-        </table>
-
+        <input type="text" name="ID" placeholder="Student ID">
+            
+        <br><br>
         <table class="Content_Table">
             <tr>
                 <th>Student Name</th>
@@ -61,7 +53,8 @@
             </tr>
         </table>
         
-        <script type="text/javascript" src="search_page.js"></script>
+        <input type="submit" value="Submit">   
+    </form>
 
 </body>
 </html>
