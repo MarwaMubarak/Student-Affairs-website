@@ -98,6 +98,15 @@ nav a:hover {
     background-color: #e6ffff;
     color: black;
 }
+
+.Active
+{
+    position: relative;
+    font-family: Arial;
+  
+}
+
+
 /* table,th,td{
     width: 800px;
     margin: auto;
@@ -141,6 +150,7 @@ font-weight: bold;
 .Content_Table tbody tr
 {
     border-bottom: 1px solid #ffffff;
+    color: #e6ffff;
 
 }
 
@@ -160,7 +170,7 @@ border-bottom:2px solid #009879;
 .Content_Table tbody tr.active-row
 {
     font-weight: bold;
-    color: #140b3b;
+    color: #173c78;
 }
 
 
