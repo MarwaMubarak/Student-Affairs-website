@@ -78,7 +78,6 @@ text-align: center;
 font-weight: bold;
 
 }
-
 .Table th,tr 
 {
     padding: 20px 20px;
@@ -86,22 +85,17 @@ font-weight: bold;
     height: 50px;
 }
 
-
-
 .Table tbody tr
 {
     border-bottom: 1px solid #ffffff;
+    color: #e6ffff;
 
 }
-
-
 
 .Table tbody tr:nth-of-type(even)
 {
     background-color: #dfdfdf;
 }
-
-
 
 .Table tr:nth-last-of-type
 {
@@ -114,9 +108,8 @@ border-bottom:2px solid #009879;
 .Table tbody tr.active-row
 {
     font-weight: bold;
-    color: #009879;
+    color: #173c78;
 }
-.Table a:hover {
-    background-color: #e6ffff;
-    color: black;
+tr:hover{
+    background-color: rgb(31, 54, 79);
 }
