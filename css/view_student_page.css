@@ -59,7 +59,7 @@ nav a:hover {
 }
 .Table
 {
-    width: 800px;
+ 
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 20px;
@@ -72,6 +72,7 @@ nav a:hover {
 }
 .Table thead tr
 {
+    text-align: center;
 background-color: #009879;
 color: #ffffff;
 text-align: center;
@@ -80,13 +81,16 @@ font-weight: bold;
 }
 .Table th,tr 
 {
-    padding: 20px 20px;
-    width: 25px;
+    text-align: center;
+    padding: 50px 50px;
+    width: 50px;
     height: 50px;
 }
 
 .Table tbody tr
 {
+    text-align: center;
+
     border-bottom: 1px solid #ffffff;
     color: #e6ffff;
 
@@ -94,22 +98,28 @@ font-weight: bold;
 
 .Table tbody tr:nth-of-type(even)
 {
+    text-align: center;
+
     background-color: #dfdfdf;
 }
 
 .Table tr:nth-last-of-type
 {
+    text-align: center;
+
 border-bottom:2px solid #009879;
 }
 
-
-
-
-.Table tbody tr.active-row
+.Table tbody tr:active
 {
+    text-align: center;
+
     font-weight: bold;
-    color: #173c78;
+    background-color: #8ab7ff;
 }
+
 tr:hover{
+    text-align: center;
+
     background-color: rgb(31, 54, 79);
 }
