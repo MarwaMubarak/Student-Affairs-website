@@ -1,9 +1,9 @@
 function onc() {
     var studentname = document.getElementById("Name").value;
     var studentid = document.getElementById("Id").value;
-    var len = studentid.tostring().length;
+    var len = studentid.toString().length;
 
-    if (studentname == "r") {
+    if (studentname == "") {
         alert("invalid name!");
         return false;
     }
@@ -21,5 +21,6 @@ function onc() {
     }
     else
         return true;
+
 }
 
