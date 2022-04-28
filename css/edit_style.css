@@ -1,0 +1,96 @@
+body {
+    background-image: url("../images/web theme.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    font-style: bild;
+}
+
+select {
+    height: 1cm;
+}
+
+input {
+    text-align: center;
+}
+
+button {
+    height: 1cm;
+    width: 3cm;
+    color: #240f70;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #240f70;
+    font-size: large;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    height: 1cm;
+    width: 6cm;
+    border: 5px;
+    border-radius: 3px;
+}
+
+div.a {
+    text-align: center;
+    margin-top: 80;
+}
+
+div.b {
+    text-align: left;
+    margin-left: 30;
+}
+
+div.c {
+    text-align: right;
+}
+
+nav {
+    position: absolute;
+    left: 100px;
+    top: 30;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav .activee {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e6ffff;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e6ffff;
+    color: black;
+}
