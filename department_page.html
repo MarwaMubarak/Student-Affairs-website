@@ -4,13 +4,13 @@
 <head>
     <title>Department page</title>
     <link rel="stylesheet" href="css/department_page.css">
-    <script lang="JavaScript" src="department_page.js">
-    </script>
+
 
 
 </head>
 
 <body>
+
     <br>
 
     <nav>
@@ -27,47 +27,50 @@
 
     <br>
 
-   
-
-        <div>
-            <form class="fontt" name="form">
-
-               <label for="studentName"><strong> Student Name:</strong></label><br /><br />
-                <input type="text" required placeholder="ex: Reham Rashad" name="studentName"><br /><br />
-                <label for="studentID"><strong> Student ID:</strong></label><br /><br />
-                <input type="text" required placeholder="ex: 20200011" name="studentID"><br /><br />
-                <label for="level"><strong> Student Level:</strong></label><br /><br />
-                <input type="radio" id="level1" name="level" value="Level (1)">
-                <label for="level1">1</label> <br />
-                <input type="radio" id="level2" name="level" value="Level (2)">
-                <label for="level2">2</label><br />
-                <input type="radio" id="level3" name="level" value="Level (3)">
-                <label for="level3">3</label><br />
-                <input type="radio" id="level4" name="level" value="Level (4)">
-                <label for="level4">4</label><br />
 
 
-                <br />
+    <div>
+        <form class="fontt" name="form" method="post">
 
-                <p><strong> Department:</strong><br /><br />
-                    <select name="department">
-                        <option disabled selected hidden>Choose department</option>
-                        <option> General</option>
-                        <option>CS</option>
-                        <option> DS</option>
-                        <option> AI</option>
-                        <option> IS</option>
-                        <option> IT</option>
-
-                    </select>
-                    <br /> <br />
-                    <button onclick="alert('the level should be level(3)!')">Submit</button>
-
-
+            <label for="studentName"><strong> Student Name:</strong></label><br /><br />
+            <input type="text" required placeholder="ex: Reham Rashad" name="studentName" id="name"><br /><br />
+            <label for="studentID"><strong> Student ID:</strong></label><br /><br />
+            <input type="text" required placeholder="ex: 20200011" name="studentID" id="id"><br /><br />
+            <label for="level"><strong> Student Level:</strong></label><br /><br />
+            <input type="radio" id="level1" name="level" value="Level (1)">
+            <label for="level1">1</label> <br />
+            <input type="radio" id="level2" name="level" value="Level (2)">
+            <label for="level2">2</label><br />
+            <input type="radio" id="level3" name="level" value="Level (3)">
+            <label for="level3">3</label><br />
+            <input type="radio" id="level4" name="level" value="Level (4)">
+            <label for="level4">4</label><br />
 
 
-            </form>
-        </div>
+            <br />
+
+            <p><strong> Department:</strong><br /><br />
+                <select name="department">
+                    <option disabled selected hidden>Choose department</option>
+                    <option> General</option>
+                    <option>CS</option>
+                    <option> DS</option>
+                    <option> AI</option>
+                    <option> IS</option>
+                    <option> IT</option>
+
+                </select>
+                <br /> <br />
+                <input type="submit" onclick="onc()" value="submit">
+                <!-- <button type="button" onclick="onc()">Submit</button> -->
+
+
+
+
+        </form>
+    </div>
+    <script lang="JavaScript" src="department_page.js">
+    </script>
 </body>
 
 </html>
