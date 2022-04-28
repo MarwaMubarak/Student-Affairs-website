@@ -2,7 +2,6 @@
 <head>
     <title>Edit Page</title>
     <link rel="stylesheet" href="css/edit_style.css">
-    <script type="text/javascript" src="JS/edit_page.js"></script>
 </head>
 
 <body>
@@ -30,27 +29,29 @@
     <br><br>
 
     <div class="b">
-
-        <center> <label for="options" style="margin-right: 15;">Update an information</label>
-            <select name="options" id="options" style="margin-right: 15;color: #240f70;">
-            <option value="ID">ID</option>
-            <option value="Name">Name</option>
-            <option value="Mobile number">Mobile number</option>
-            <option value="GPA">GPA</option>
-            <option value="Status">Status</option>
-            <option value="Gender">Gender</option>
-            <option value="date of birth">Date of birth</option>
-            <option value="Email">Email</option>
-            </select>
-            <input type="text" style="margin-right: 15;color: #240f70;" placeholder="Enter Updated information">
-            <button style="margin-right: 30;">Update</button>
-            <br><br>
+            <center> <label for="options" style="margin-right: 15;">Update an information</label>
+            
+                <select name="options" id="Op" style="margin-right: 15;color: #240f70;">
+                <option value="ID">ID</option>
+                <option value="Name">Name</option>
+                <option value="Mobile number">Mobile number</option>
+                <option value="GPA">GPA</option>
+                <option value="Status">Status</option>
+                <option value="Gender">Gender</option>
+                <option value="date of birth">Date of birth</option>
+                <option value="Email">Email</option>
+                </select>
+                <input type="text" id="current" style="margin-right: 15;color: #240f70;" placeholder="Enter Updated information">
+                <button onclick="update()" style="margin-right: 30;">Update</button>
+                <br><br>
+                <p id="feedback"></p>       
             <label> Delete Student</label>
             <br><br>
             <button onclick="confirmAction()">Delete</button>
+           
         </center>
     </div>
 
 </body>
-
+<script type="text/javascript" src="JS/edit_page.js"></script>
 </html>
