@@ -5,17 +5,17 @@ function validateForm()
     let email=document.forms['myform']["Email"].value;
     let id = document.forms['myform']["ID"].value;
     let gpa=document.forms['myform']["GPA"].value;
-    let Birthday=document.forms['myform']['birthday']
+    var nameformat = /^[a-zA-Z]+$/;
 
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var phoneform = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    
-    if(studentName==null || studentName=="" )
+    var phoneformt = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+    if(studentName==null || studentName==""||!studentName.match(nameformat) )
     {
         alert("Student Name isn't Valid");
         return false;
     }
-    else if(!number.match(phoneform)||number==""||number==null)
+    else if(!number.match(phoneformt)||number==""||number==null)
     {
         alert("The Number isn't Valid");
         return false;
