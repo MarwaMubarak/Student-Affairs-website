@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/web theme.png");
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -43,7 +43,7 @@ button {
 }
 
 input[type=text],
-[type=tel] {
+[type=tel] ,[type=number]{
     height: 1cm;
     width: 6cm;
     border: 5px;
