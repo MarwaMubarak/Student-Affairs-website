@@ -24,10 +24,10 @@
     <ul>
 
 
-        <form name="myform" action="something" onsubmit="return validateForm()" method="post" >
+        <form name="myform" onsubmit="return validateForm()" method="post" >
             <br><br>
             <h1>Add Student</h1>
-            <img src="images/user.png" alt="Trulli" width="150" height="150"><br>
+            <img src="images/user.png" class="here_image"><br>
                 <!--Name-->
             
                 <input type="text" name ='StudentName'  placeholder="Student Name"><br><br>
@@ -45,6 +45,7 @@
                 <input type="number" name="GPA" step="0.01" placeholder="GPA"><br><br>
 
                 <!--Birthday-->
+                <label for="birthday">Birthday:</label>
                 <input type="date"  name="birthday"><br><br>
 
                 <!--Gender-->
@@ -104,7 +105,7 @@
 
                                     <input type="radio" name="department" id="it" value="it">
                                     <label for="it">IT</label><br><br>
-                                    <input  type="Submit" value="Submit"><br><br>
+                                    <input  type="submit" value="Submit"><br><br>
                                     
         </form> 
 </body>
