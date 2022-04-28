@@ -5,6 +5,12 @@ body {
     background-position: center;
     background-size: cover;
 }
+p
+{    color: rgb(122, 177, 216);
+     font-size: 28px;
+     border-style: double;
+
+}
 
 h3 {
     color: rgb(255, 255, 255);
