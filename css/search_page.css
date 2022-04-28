@@ -8,6 +8,48 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+a:link
+{
+    color: white;
+    text-decoration: none;
+}
+a:visited
+{
+    color: rgb(27, 81, 109);
+    text-decoration: underline;
+}
+a:hover
+{
+    color: #140b3b;
+    text-decoration: none;
+}
+.button {
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 25px;
+    color: rgb(27, 81, 109);
+    padding: 15px 32px;
+    text-align: center;
+    font-size:xx-large;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+  input[type=submit] {
+    height: .8cm;
+    width: 2cm;
+    color: #240f70; 
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: large;
+    border-radius: 25px;
+}
+
+
+  tr:hover{
+      background-color: rgb(31, 54, 79);
+  }
+
 nav {
     position: absolute;
     left: 100px;
@@ -24,6 +66,19 @@ nav a {
     margin-right: 25px;
     padding: 10px;
     border-radius: 10px;
+}
+.labels
+{
+    color: white;
+    font-size: larger;
+    border-radius: 25px;
+}
+.input
+{
+    color: #e6ffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
 }
 
 nav .activee {
@@ -43,7 +98,6 @@ nav a:hover {
     background-color: #e6ffff;
     color: black;
 }
-
 /* table,th,td{
     width: 800px;
     margin: auto;
@@ -55,7 +109,6 @@ nav a:hover {
     border-radius:  5px 5px 0 0;
 
 } */
-
 
 .Content_Table
 {
@@ -78,9 +131,6 @@ text-align: center;
 font-weight: bold;
 
 }
-
-
-
 .Content_Table th,tr 
 {
     padding: 20px 20px;
@@ -88,22 +138,16 @@ font-weight: bold;
     height: 50px;
 }
 
-
-
 .Content_Table tbody tr
 {
     border-bottom: 1px solid #ffffff;
 
 }
 
-
-
 .Content_Table tbody tr:nth-of-type(even)
 {
     background-color: #dfdfdf;
 }
-
-
 
 .Content_Table tr:nth-last-of-type
 {
@@ -116,7 +160,7 @@ border-bottom:2px solid #009879;
 .Content_Table tbody tr.active-row
 {
     font-weight: bold;
-    color: #009879;
+    color: #140b3b;
 }
 
 
