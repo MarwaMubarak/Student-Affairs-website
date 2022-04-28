@@ -17,7 +17,7 @@ function myFunction(entery) {
   var x = document.getElementById("Op").value;
   var phoneform = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  var nameformat = /^[a-zA-Z]+$/;
+  var nameformat = /^[ a-zA-Z]+$/;
 
   if(x=="GPA")
   {
