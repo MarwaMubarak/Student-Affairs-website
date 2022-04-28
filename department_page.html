@@ -4,9 +4,7 @@
 <head>
     <title>Department page</title>
     <link rel="stylesheet" href="css/department_page.css">
-
-
-
+    <script type="text/javascript" src="JS/department_page.js"></script>
 </head>
 
 <body>
@@ -30,12 +28,12 @@
 
 
     <div>
-        <form class="fontt" name="form" method="post">
+        <form>
 
             <label for="studentName"><strong> Student Name:</strong></label><br /><br />
-            <input type="text" required placeholder="ex: Reham Rashad" name="studentName" id="name"><br /><br />
+            <input type="text" required placeholder="ex: Reham Rashad" name="studentName" id="Name"><br /><br />
             <label for="studentID"><strong> Student ID:</strong></label><br /><br />
-            <input type="text" required placeholder="ex: 20200011" name="studentID" id="id"><br /><br />
+            <input type="text" required placeholder="ex: 20200011" name="studentID" id="Id"><br /><br />
             <label for="level"><strong> Student Level:</strong></label><br /><br />
             <input type="radio" id="level1" name="level" value="Level (1)">
             <label for="level1">1</label> <br />
@@ -61,16 +59,15 @@
 
                 </select>
                 <br /> <br />
-                <input type="submit" onclick="onc()" value="submit">
-                <!-- <button type="button" onclick="onc()">Submit</button> -->
+                <!-- <input type="submit" onclick="onc()" value="submit"> -->
+                <button onclick="onc()">Submit</button>
 
 
 
 
         </form>
     </div>
-    <script lang="JavaScript" src="department_page.js">
-    </script>
+
 </body>
 
 </html>
