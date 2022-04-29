@@ -180,7 +180,8 @@ font-weight: bold;
 
 .Content_Table tbody tr:nth-of-type(even)
 {
-    background-color: #dfdfdf;
+    background-color: rgb(31, 54, 79);
+
 }
 
 .Content_Table tr:nth-last-of-type
