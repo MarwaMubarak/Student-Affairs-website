@@ -1,0 +1,100 @@
+body {
+    background-image: url("../images/web theme.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+p {
+    color: #e6ffff;
+
+    font-size: x-large;
+}
+
+label {
+    color: #e6ffff;
+    font-size: x-large;
+
+}
+
+input[type=text] {
+    border-radius: 40px;
+    border: none;
+    height: 1.5cm;
+    width: 9cm;
+    color: #3c13ce;
+    text-align: center;
+    font-size: large;
+
+}
+
+select {
+    border-radius: 40px;
+    border: none;
+    height: 1.5cm;
+    width: 9cm;
+    color: #3c13ce;
+    text-align: center;
+    font-size: large;
+}
+
+button {
+    border-radius: 40px;
+    border: none;
+    height: 1.5cm;
+    width: 3cm;
+    color: #3c13ce;
+    text-align: center;
+    font-size: large;
+}
+
+div {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+
+nav {
+    position: absolute;
+    left: 100px;
+    top: 30;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav .activee {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: poppins;
+    margin-right: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e6ffff;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e6ffff;
+    color: black;
+}
+
+.fontt {
+    color: white;
+}
