@@ -12,14 +12,12 @@ body {
 
 p {
     color: #e6ffff;
-
     font-size: x-large;
 }
 
 label {
     color: #e6ffff;
     font-size: x-large;
-
 }
 
 input[type=text] {
@@ -30,7 +28,6 @@ input[type=text] {
     color: #3c13ce;
     text-align: center;
     font-size: large;
-
 }
 
 select {
@@ -38,7 +35,7 @@ select {
     border: none;
     height: 1.5cm;
     width: 9cm;
-    color: #3c13ce;
+    color: black;
     text-align: center;
     font-size: large;
 }
@@ -48,7 +45,7 @@ button {
     border: none;
     height: 1.5cm;
     width: 3cm;
-    color: #3c13ce;
+    color: black;
     text-align: center;
     font-size: large;
 }
@@ -57,7 +54,6 @@ div {
     margin-left: 40px;
     margin-top: 50px;
 }
-
 
 nav {
     position: absolute;
