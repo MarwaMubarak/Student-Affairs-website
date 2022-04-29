@@ -20,48 +20,45 @@
         <a href="login_page.html">Logout</a>
     </nav>
 
-    <br><br><br>
-    <form name="myform" onsubmit="return validateForm()" method="post" >
-    <tab><strong for="student status">Student Status : </strong>
+    <br><br> <br><br>
+
+    <form name="myform" id="space" onsubmit="return validateForm()" method="post" >
+    <tab><strong id="space1" for="student status">Student Status :</strong>
     <select class="Active" name="student status">
 
         <option value="Active">Active</option>
         <option value="Inactive"select>Inactive</option>
         <option value="All">All</option>
     </select>
+        <tab><strong for="student status">Student ID:</strong> <input type="number" name="ID" placeholder="Student ID">
+        <input type="submit" value="Search">  </tab>
+        
 
-
-        <br><br>
-
-        <tab><input type="number" name="ID" placeholder="Student ID">
-        <input type="submit" value="Search">  
-        <br><br>
-
-        <tab><table class="Content_Table">
+        <table class="Content_Table">
             <tr>
                 <tab><th>Student Name</th>
                 <th>ID</th>
                 <th>Department</th>
 
             </tr>
-            <tab><tr>
+            <tr>
                 <td><a href="department_page.html">Student 1</a></td>
                 <td>1</td>
                 <td>CS</td>
             </tr>   
-            <tab><tr>
+            <tr>
                 <td><a href="department_page.html">Student 2</a> </td>
                 <td>2</td>
                 <td>IS</td>
             </tr>
-            <tab><tr>
+            <tr>
                 <td><a href="department_page.html">Student 3</a> </td>
                 <td>3</td>
                 <td>IT</td>
             </tr>
-        </table></tab>
+        </table>
         
-         
+        
     </form>
 </body>
 </html>
