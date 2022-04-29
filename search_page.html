@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html><head>
-<title>
-    search page
-</title>
-<script type="text/javascript" src="JS/search_page.js"></script>
-<link rel="stylesheet" href="css/search_page.css">
+<html>
+
+<head>
+    <title>
+        search page
+    </title>
+    <script type="text/javascript" src="JS/search_JS.js"></script>
+    <link rel="stylesheet" href="css/search_page.css">
 </head>
+
 <body>
 
     <br>
@@ -22,45 +25,47 @@
 
     <br><br> <br><br>
 
-    <form name="myform" id="space" onsubmit="return validateForm()" method="post" >
-    <tab><strong id="space1" for="student status">Student Status :</strong>
-    <select class="Active" name="student status">
+    <form name="myform" id="space" onsubmit="return validateForm()" method="post">
+        <tab><strong id="space1" for="student status">Student Status :</strong>
+            <select class="Active" name="student status">
 
         <option value="Active">Active</option>
         <option value="Inactive"select>Inactive</option>
         <option value="All">All</option>
     </select>
-        <tab><strong for="student status">Student ID:</strong> <input type="number" name="ID" placeholder="Student ID">
-        <input type="submit" value="Search">  </tab>
-        
+            <tab><strong for="student status">Student ID:</strong> <input type="number" name="ID" placeholder="Student ID">
+                <input type="submit" value="Search"> </tab>
 
-        <table class="Content_Table">
-            <tr>
-                <tab><th>Student Name</th>
-                <th>ID</th>
-                <th>Department</th>
 
-            </tr>
-            <tr>
-                <td><a href="department_page.html">Student 1</a></td>
-                <td>1</td>
-                <td>CS</td>
-            </tr>   
-            <tr>
-                <td><a href="department_page.html">Student 2</a> </td>
-                <td>2</td>
-                <td>IS</td>
-            </tr>
-            <tr>
-                <td><a href="department_page.html">Student 3</a> </td>
-                <td>3</td>
-                <td>IT</td>
-            </tr>
-        </table>
-        
-        
+            <table class="Content_Table">
+                <tr>
+                    <tab>
+                        <th>Student Name</th>
+                        <th>ID</th>
+                        <th>Department</th>
+
+                </tr>
+                <tr>
+                    <td><a href="department_page.html">Student 1</a></td>
+                    <td>1</td>
+                    <td>CS</td>
+                </tr>
+                <tr>
+                    <td><a href="department_page.html">Student 2</a> </td>
+                    <td>2</td>
+                    <td>IS</td>
+                </tr>
+                <tr>
+                    <td><a href="department_page.html">Student 3</a> </td>
+                    <td>3</td>
+                    <td>IT</td>
+                </tr>
+            </table>
+
+
     </form>
 </body>
+
 </html>
 
 <!--- border="1px collapse" style="color: white;border-radius: 25px;border-color: white;border-style:solid ;border-collapse: collapse;padding: 100px 50px 50px 50px;"-->
