@@ -28,7 +28,7 @@ a:hover {
     background-color: #ffffff;
     border: none;
     border-radius: 25px;
-    color: rgb(27, 81, 109);
+    color: black;
     padding: 15px 32px;
     text-align: center;
     font-size: xx-large;
@@ -40,7 +40,7 @@ a:hover {
 input[type=submit] {
     height: 1cm;
     width: 2.5cm;
-    color: #240f70;
+    color: black;
     background-color: rgb(255, 255, 255);
     border: none;
     font-size: large;
@@ -189,7 +189,7 @@ tr {
 
 .Content_Table tbody tr:active {
     font-weight: bold;
-    background-color: #8ab7ff;
+    background-color: rgb(70, 164, 210);
 }
 
 
