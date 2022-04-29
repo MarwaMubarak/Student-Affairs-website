@@ -25,7 +25,7 @@ function validateForm()
         alert("The Email isn't Valid");
         return false;
     }
-    else if(id<1||id>=10000000||id==""||id==null)
+    else if(id<1||id>=100000000||id==""||id==null)
     {
         alert("The ID isn't Valid");
         return false;
