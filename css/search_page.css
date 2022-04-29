@@ -149,7 +149,7 @@ nav a:hover {
 } */
 
 .Content_Table {
-    width: 800px;
+    width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 20px;
@@ -162,7 +162,6 @@ nav a:hover {
 }
 
 .Content_Table thead tr {
-    background-color: #009879;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
