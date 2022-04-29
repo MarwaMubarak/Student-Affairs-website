@@ -1,13 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-     font-family:Arial;
+    font-family: Arial;
     background-image: url("../images/web theme.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 input[type=submit] {
     height: .8cm;
     width: 2cm;
@@ -57,76 +58,66 @@ nav a:hover {
     background-color: #e6ffff;
     color: black;
 }
-.Table
-{
- 
+
+.Table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 20px;
     padding: 20px;
     text-align: center;
-
     border-radius: 7px 7px 7px 7px;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.Table thead tr
-{
-    text-align: center;
-background-color: #009879;
-color: #ffffff;
-text-align: center;
-font-weight: bold;
 
+.Table thead tr {
+    text-align: center;
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
 }
-.Table th,tr 
-{
+
+.Table th,
+tr {
     text-align: center;
     padding: 50px 50px;
     width: 50px;
     height: 50px;
 }
 
-.Table tbody tr
-{
+.Table tbody tr {
     text-align: center;
-
     border-bottom: 1px solid #ffffff;
     color: #e6ffff;
-
 }
 
-.Table tbody tr:nth-of-type(even)
-{
+.Table tbody tr:nth-of-type(even) {
     text-align: center;
-
-    background-color: #dfdfdf;
+    background-color: rgb(173, 214, 235);
 }
 
-.Table tr:nth-last-of-type
-{
+.Table tr:nth-last-of-type {
     text-align: center;
-
-border-bottom:2px solid #009879;
+    border-bottom: 2px solid #009879;
 }
 
-.Table tbody tr:active
-{
+.Table tbody tr:active {
     text-align: center;
-
     font-weight: bold;
     background-color: #8ab7ff;
 }
 
-tr:hover{
+tr:hover {
     text-align: center;
-
     background-color: rgb(31, 54, 79);
 }
-strong{
+
+strong {
     color: #ffffff;
     margin: 10px;
 }
+
 select {
     height: .5cm;
     width: 4cm;
@@ -134,8 +125,8 @@ select {
     border-radius: 3px;
     margin: 10px;
 }
+
 select:focus {
     min-width: 150px;
     width: auto;
 }
-
