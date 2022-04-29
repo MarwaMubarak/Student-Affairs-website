@@ -36,8 +36,8 @@ a:hover
     font-size: 15px;
   }
   input[type=submit] {
-    height: .8cm;
-    width: 2cm;
+    height: 1cm;
+    width: 2.5cm;
     color: #240f70; 
     background-color: rgb(255, 255, 255);
     border: none;
@@ -46,8 +46,8 @@ a:hover
 }
 input[type=text],
 [type=tel] ,[type=number]{
-    height: .5cm;
-    width: 4cm;
+    height: 1cm;
+    width: 5cm;
     border: 5px;
     border-radius: 3px;
 }
@@ -55,8 +55,8 @@ strong{
     color: #ffffff;
 }
 select {
-    height: .5cm;
-    width: 4cm;
+    height: 1cm;
+    width: 5cm;
     border: 5px;
     border-radius: 3px;
     margin: 10px;
