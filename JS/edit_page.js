@@ -22,11 +22,11 @@ function myFunction(entery) {
   if(x=="GPA")
   {
     if(entery<0||entery>4)
-      document.getElementById("feedback").innerHTML = "incorrect GPA! ";
+      alert ("incorrect GPA! ");
     else if(entery == null || entery == "")
-      document.getElementById("feedback").innerHTML = "empty input please enter data";
+      alert ("empty input please enter data");
     else if(isNaN(entery))
-      document.getElementById("feedback").innerHTML = "incorrect GPA! enter number";
+      alert ("incorrect GPA! ");
     else
       document.getElementById("feedback").innerHTML = "Editing GPA done ^^";
 
@@ -34,7 +34,7 @@ function myFunction(entery) {
   else if(x=="Name")
   {
     if(!entery.match(nameformat))
-    document.getElementById("feedback").innerHTML = "incorrect Name";
+      alert ( "incorrect Name");
     else
     document.getElementById("feedback").innerHTML = "Editing Name done ^^";
 
@@ -42,7 +42,7 @@ function myFunction(entery) {
   else if(x=="Mobile number")
   {
     if(!entery.match(phoneform))
-      document.getElementById("feedback").innerHTML = "incorrect Number phone";
+      alert("incorrect Number phone");
     else
       document.getElementById("feedback").innerHTML = "Editing Mobile number done ^^";
   }
@@ -51,14 +51,14 @@ function myFunction(entery) {
     if(entery=="active"||entery=="inactive"||entery=="Inactive"||entery=="Active")
       document.getElementById("feedback").innerHTML = "Editing Status done ^^";
     else
-      document.getElementById("feedback").innerHTML = "incorrect Status";
+      alert( "incorrect Status");
   }
   else if(x=="Gender")
   {
     if(entery=="male"||entery=="female"||entery=="Male"||entery=="Female")
       document.getElementById("feedback").innerHTML = "Editing Gender done ^^";
     else
-      document.getElementById("feedback").innerHTML = "incorrect Gender";
+      alert("incorrect Gender");
 
   }
   else if(x=="date of birth")
@@ -68,7 +68,7 @@ function myFunction(entery) {
   else if(x=="ID")
   {
     if(entery<1||entery>=100000000||entery==""||entery==null)
-      document.getElementById("feedback").innerHTML = "incorrect ID";
+        alert("incorrect ID");
     else   
       document.getElementById("feedback").innerHTML = "Editing ID done ^^";
   }
@@ -76,7 +76,7 @@ function myFunction(entery) {
   {
     if(!entery.match(mailformat))
     {
-      document.getElementById("feedback").innerHTML = "incorrect mail";
+      alert( "incorrect mail");
 
     }
     else
