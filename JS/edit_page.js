@@ -48,14 +48,14 @@ function myFunction(entery) {
   }
   else if(x=="Status")
   {
-    if(entery=="active"||entery=="inactive")
+    if(entery=="active"||entery=="inactive"||entery=="Inactive"||entery=="Active")
       document.getElementById("feedback").innerHTML = "Editing Status done ^^";
     else
       document.getElementById("feedback").innerHTML = "incorrect Status";
   }
   else if(x=="Gender")
   {
-    if(entery=="male"||entery=="female")
+    if(entery=="male"||entery=="female"||entery=="Male"||entery=="Female")
       document.getElementById("feedback").innerHTML = "Editing Gender done ^^";
     else
       document.getElementById("feedback").innerHTML = "incorrect Gender";
@@ -67,7 +67,10 @@ function myFunction(entery) {
   }
   else if(x=="ID")
   {
-    document.getElementById("feedback").innerHTML = "Editing ID done ^^";
+    if(entery<1||entery>=100000000||entery==""||entery==null)
+      document.getElementById("feedback").innerHTML = "incorrect ID";
+    else   
+      document.getElementById("feedback").innerHTML = "Editing ID done ^^";
   }
   else //email
   {
