@@ -1,59 +1,65 @@
 body {
     margin: 0;
     padding: 0;
-     font-family:Arial;
+    font-family: Arial;
     background-image: url("../images/web theme.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-a:link
-{
+
+a:link {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-a:visited
-{
+
+a:visited {
     color: rgb(255, 255, 255);
     text-decoration: underline;
 }
-a:hover
-{
+
+a:hover {
     color: #140b3b;
     text-decoration: none;
 }
+
 .button {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border: none;
     border-radius: 25px;
     color: rgb(27, 81, 109);
     padding: 15px 32px;
     text-align: center;
-    font-size:xx-large;
+    font-size: xx-large;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-  }
-  input[type=submit] {
+}
+
+input[type=submit] {
     height: 1cm;
     width: 2.5cm;
-    color: #240f70; 
+    color: #240f70;
     background-color: rgb(255, 255, 255);
     border: none;
     font-size: large;
     border-radius: 25px;
 }
+
 input[type=text],
-[type=tel] ,[type=number]{
+[type=tel],
+[type=number] {
     height: 1cm;
     width: 5cm;
     border: 5px;
     border-radius: 3px;
 }
-strong{
+
+strong {
     color: #ffffff;
 }
+
 select {
     height: 1cm;
     width: 5cm;
@@ -61,21 +67,22 @@ select {
     border-radius: 3px;
     margin: 10px;
 }
+
 select:focus {
     min-width: 150px;
     width: auto;
 }
 
-
-  tr:hover{
-      background-color: rgb(31, 54, 79);
-  }
+tr:hover {
+    background-color: rgb(31, 54, 79);
+}
 
 nav {
     position: absolute;
     left: 100px;
     top: 30;
 }
+
 tab {
     padding-left: 1em;
 }
@@ -91,14 +98,14 @@ nav a {
     padding: 10px;
     border-radius: 10px;
 }
-.labels
-{
+
+.labels {
     color: white;
     font-size: larger;
     border-radius: 25px;
 }
-.input
-{
+
+.input {
     color: #e6ffff;
     border-radius: 5px;
     text-align: center;
@@ -123,13 +130,10 @@ nav a:hover {
     color: black;
 }
 
-.Active
-{
+.Active {
     position: relative;
     font-family: Arial;
-  
 }
-
 
 
 /* table,th,td{
@@ -143,8 +147,8 @@ nav a:hover {
     border-radius:  5px 5px 0 0;
 
 } */
-.Content_Table
-{
+
+.Content_Table {
     width: 800px;
     border-collapse: collapse;
     margin: 25px 0;
@@ -153,47 +157,42 @@ nav a:hover {
     text-align: center;
     padding-left: 1em;
     border-radius: 7px 7px 7px 7px;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.Content_Table thead tr
-{
-background-color: #009879;
-color: #ffffff;
-text-align: center;
-font-weight: bold;
 
+.Content_Table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
 }
-.Content_Table th,tr 
-{
+
+.Content_Table th,
+tr {
     padding: 20px 20px;
     width: 25px;
     height: 50px;
 }
 
-.Content_Table tbody tr
-{
+.Content_Table tbody tr {
     border-bottom: 1px solid #ffffff;
     color: #e6ffff;
-
 }
 
-.Content_Table tbody tr:nth-of-type(even)
-{
-    background-color: rgb(52, 122, 198);
-
+.Content_Table tbody tr:nth-of-type(even) {
+    background-color: rgb(173, 214, 235);
 }
 
-.Content_Table tr:nth-last-of-type
-{
-border-bottom:2px solid #009879;
+.Content_Table tr:nth-last-of-type {
+    border-bottom: 2px solid #009879;
 }
 
-.Content_Table tbody tr:active
-{
+.Content_Table tbody tr:active {
     font-weight: bold;
     background-color: #8ab7ff;
 }
+
 
 /*table{
     width: 50%;
@@ -222,5 +221,3 @@ border-bottom:2px solid #009879;
   }
 
       */
-
-  
