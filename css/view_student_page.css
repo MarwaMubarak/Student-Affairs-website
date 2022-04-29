@@ -60,19 +60,19 @@ nav a:hover {
 }
 
 .Table {
+    width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 20px;
     padding: 20px;
     text-align: center;
+    padding-left: 1em;
     border-radius: 7px 7px 7px 7px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .Table thead tr {
-    text-align: center;
-    background-color: #009879;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
@@ -80,34 +80,28 @@ nav a:hover {
 
 .Table th,
 tr {
-    text-align: center;
-    padding: 50px 50px;
-    width: 50px;
+    padding: 20px 20px;
+    width: 25px;
     height: 50px;
 }
 
 .Table tbody tr {
-    text-align: center;
     border-bottom: 1px solid #ffffff;
     color: #e6ffff;
 }
 
 .Table tbody tr:nth-of-type(even) {
-    text-align: center;
     background-color: rgb(173, 214, 235);
 }
 
 .Table tr:nth-last-of-type {
-    text-align: center;
     border-bottom: 2px solid #009879;
 }
 
 .Table tbody tr:active {
-    text-align: center;
     font-weight: bold;
     background-color: #8ab7ff;
 }
-
 tr:hover {
     text-align: center;
     background-color: rgb(31, 54, 79);
