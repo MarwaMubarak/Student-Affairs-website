@@ -12,7 +12,7 @@ body {
 input[type=submit] {
     height: .8cm;
     width: 2cm;
-    color: #240f70;
+    color: black;
     background-color: rgb(255, 255, 255);
     border: none;
     font-size: large;
@@ -100,8 +100,9 @@ tr {
 
 .Table tbody tr:active {
     font-weight: bold;
-    background-color: #8ab7ff;
+    background-color: rgb(70, 164, 210);
 }
+
 tr:hover {
     text-align: center;
     background-color: rgb(31, 54, 79);
