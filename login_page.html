@@ -24,7 +24,7 @@
     Account Username: Nourhan
     Account Password: 12345 
         -->
-        <form method="post" name="loginForm" action="home_page.html">
+        <form method="post" name="loginForm" onsubmit="LoginValidation(this) ">
 
             <div class="data">
                 <input type="text" id="user" required>
@@ -37,7 +37,7 @@
                 <label>Password</label>
             </div>
 
-            <input type="submit" onclick="LoginValidation()" value="Login">
+            <input type="submit" value="Login">
 
         </form>
     </div>
